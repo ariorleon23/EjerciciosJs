@@ -19,7 +19,8 @@ console.log("El resultado de modulo entre", c, " y" , a, "es " ,modulo);
 //Incremento de más de una unidad;
 
 
-
+var incremento = a+=b;
+console.log(incremento)
 
 //Tabla de verdad 
 let verdadero = true;
