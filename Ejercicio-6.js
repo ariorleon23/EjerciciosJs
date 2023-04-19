@@ -65,17 +65,26 @@ else{
 
 //Planteamiento
 var descuento;
-var docena = 10;
+var docena = 0;
 const valorDocena = 60000;
+var valorCompra = docena*valorDocena;
+var descuentoAplicado;
 
-if(docena>1 && docena>5){
+if(docena>1 && docena<5){
     descuento=0.1;
+    descuentoAplicado = valorCompra*(1-descuento)
+    console.log(`El valor de la compra es ${descuentoAplicado}`)
+
 }
 else if (docena>=5 && docena<10){
     descuento=0.15;
+    descuentoAplicado = valorCompra*(1-descuento)
+    console.log(`El valor de la compra es ${descuentoAplicado}`)
 }
 else if(docena>10){
     descuento=0.2;
+    descuentoAplicado = valorCompra*(1-descuento)
+    console.log(`El valor de la compra es ${descuentoAplicado}`)
 }
 else{
     console.log("Por favor entra un número positivo de docenas")
