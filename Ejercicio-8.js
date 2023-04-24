@@ -17,57 +17,54 @@ OperacionesMatematicas(10,5);
 
 function sumaDosNumeros(num1,num2){
     suma = num1+num2;
-    console.log(` ${num1} + ${num2} = ${suma}.`)
+    return (` ${num1} + ${num2} = ${suma}.`)
 }
-sumaDosNumeros(10,5)
+console.log(sumaDosNumeros(10,5))
 
 function restaDosNumeros(num1,num2){
     resta = num1-num2;
-    console.log(`${num1} - ${num2} = ${resta}.`)
+    return (`${num1} - ${num2} = ${resta}.`)
 }
-restaDosNumeros(10,5)
+console.log(restaDosNumeros(10,5))
 
 function multiplicacionDosNumeros(num1,num2){
     multiplicacion = num1*num2;
-    console.log(` ${num1} x ${num2} = ${multiplicacion}.`)
+    return (` ${num1} x ${num2} = ${multiplicacion}.`)
 }
 
-multiplicacionDosNumeros(10,5)
+console.log(multiplicacionDosNumeros(10,5))
 
 function divisionDosNumeros(num1,num2){
     division = num1/num2;
-    console.log(` ${num1} / ${num2} = ${division}.`)
+    return (` ${num1} / ${num2} = ${division}.`)
 }
 
-divisionDosNumeros(10,5)
+console.log(divisionDosNumeros(10,5))
 // Construir una función que convierta dólares a pesos colombianos y otra función que convierta pesos colombianos a dólares.
 
 
 function ConversionPesosDolares(pesos){
     pesosDolares = pesos*0.00022;
-   console.log(`$ ${pesos} COP son $ ${pesosDolares} USD`)
+   return (`$ ${pesos} COP son $ ${pesosDolares} USD`)
     
 }
 
-ConversionPesosDolares(10000)
+console.log(ConversionPesosDolares(10000))
 
 function ConversionDolaresPesos(dolares){
     DolaresPesos = dolares*4474.70;
-    console.log(`$ ${dolares} USD son $ ${DolaresPesos} COP`)
+    return (`$ ${dolares} USD son $ ${DolaresPesos} COP`)
 }
 
-ConversionDolaresPesos(5)
+console.log(ConversionDolaresPesos(5))
  // Construir un código que tenga una función para cada uno de los siguientes cálculos: Área de un cuadrado/Área de un círculo/Área de un triángulo.
 
  function AreaFiguras(radio,ladoCuadrado, baseTringualo, alturaTriangulo){
-    areaCuadrado = ladoCuadrado*ladoCuadrado
+    areaCuadrado = ladoCuadrado*ladoCuadrado;
     areaCirculo = Math.PI*Math.pow(radio,2);
     areaTriangulo = (baseTringualo*alturaTriangulo)/2;
 
-    console.log(`El área del cuadrado es ${areaCuadrado}`)
-    console.log(`El área del circulo es ${areaCirculo.toFixed(2)}`)
-    console.log(`El área del trianguloo es ${areaTriangulo}`)
-
+    return (`El área del cuadrado es ${areaCuadrado}, el área del circulo es ${areaCirculo.toFixed(2)} y el área del triángulo es ${areaTriangulo} `);
  }
 
- AreaFiguras(2,4,3,5)
+ console.log(AreaFiguras(2,4,3,5))
